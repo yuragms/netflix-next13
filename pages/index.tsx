@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Billboard from '../components/Billboard';
 import MovieList from '../components/MovieList';
 import useMovieList from '../hooks/useMivieList';
-import useFavourites from '../hooks/useFavourites';
+import useFavourites from '../hooks/useFavorites';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
