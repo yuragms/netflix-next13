@@ -3,7 +3,7 @@ import { getSession } from 'next-auth/react';
 import Navbar from '../components/Navbar';
 import Billboard from '../components/Billboard';
 import MovieList from '../components/MovieList';
-import useMovieList from '../hooks/useMivieList';
+import useMovieList from '../hooks/useMovieList';
 import useFavourites from '../hooks/useFavorites';
 
 export async function getServerSideProps(context: NextPageContext) {
