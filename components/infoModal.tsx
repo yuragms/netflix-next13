@@ -53,9 +53,12 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
               loop
               poster={data?.thumbnalUrl}
               src={data?.videoUrl}
-                      ></video>
-                      <div className="cursor-pointer absolute top-3 right-3 h-10 w-10 rounded-full bg-black bg-opacity-70 flex items-center justify-center"
-                       onClick={() => { }}></div>
+            >
+
+            </video>
+              <div className="cursor-pointer absolute top-3 right-3 h-10 w-10 rounded-full bg-black bg-opacity-70 flex items-center justify-center" onClick={() => { }}>
+                <AiOutlineClose />
+              </div>
           </div>
         </div>
       </div>
