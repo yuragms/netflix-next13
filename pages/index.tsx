@@ -5,6 +5,7 @@ import Billboard from '../components/Billboard';
 import MovieList from '../components/MovieList';
 import useMovieList from '../hooks/useMovieList';
 import useFavourites from '../hooks/useFavorites';
+import InfoModal from '../components/infoModal';
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -28,6 +29,7 @@ export default function Home() {
 
   return (
     <>
+      <InfoModal visible onClose={() => {}} />
       <Navbar />
       <Billboard />
       <div className="pb-40">
