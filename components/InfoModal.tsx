@@ -36,7 +36,6 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
   z-50 transition duration-300 bg-black bg-opacity-80 flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0"
     >
       <div className="relative w-auto mx-auto max-w-3xl rounded-md overflow-hidden">
-        "
         <div
           className={`${isVisible ? 'scale-100' : 'scale-0'} transform
               duration-300
